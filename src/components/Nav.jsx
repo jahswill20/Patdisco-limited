@@ -12,10 +12,13 @@ const NavBar = () => {
 
   return (
     <div className='flex justify-between bg-blue-300 px-7 py-3 h-16 rounded-b-3xl'>
-      <div className='hidden md:flex'>
-        <a href="#">Home</a>
-        <a href="#">Our Products</a>
-        <a href="#">About Us</a>
+      <div className='hidden md:flex justify-between gap-80'>
+        <div className='md:flex gap-9 mt-2 px-7 font-bold ml-8' >
+        <a href="#Home">HOME</a>
+        <a href="#OurProducts">OUR PRODUCTS</a>
+        <a href="#About">ABOUT US</a>
+        </div>
+        <img src={logo} alt="" className='-rotate-90 w-80 h-60 absolute right-5 -top-0 -mt-20'  />
       </div>
       <div>
         {isMenuOpen ? (
@@ -38,7 +41,7 @@ const NavBar = () => {
         <img src={logo} alt="logo" className='-rotate-90 w-24 relative bottom-16 h-44 md:hidden' />
       </div>
       {isMenuOpen && (
-        <div className='absolute h-18 top-14 w-60 left-3 rounded-lg py-2 px-3 flex flex-col justify-center bg-blue-300 gap-2 md:hidden'>
+        <div className='absolute h-18 top-14  left-3 rounded-lg py-2 px-5 flex flex-col justify-center bg-blue-300 gap-2 md:hidden'>
           <a href="#Home">Home</a>
           <a href="#OurProducts">Our Products</a>
           <a href="#About">About Us</a>

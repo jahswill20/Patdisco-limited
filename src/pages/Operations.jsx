@@ -2,12 +2,12 @@ import React from 'react';
 
 const Operations = () => {
   return (
-    <div className='bg-blue-300 px-3 py-4'>
-      <div className='flex  text-center'>
-        <h2 className='text-3xl font-bold text-center relative mx-auto mb-4 mt-3'>Operations</h2>
+    <div className='bg-blue-300 px-3 py-4 md:pt-16 md:pb-32'>
+      <div className='flex  text-center md:text-left md:mt-5'>
+        <h2 className='text-3xl font-bold text-center relative mx-auto mb-4 mt-3 md:relative md:left-0 md:ml-5 md:text-4xl'> Buisness Operations</h2>
       </div>
-      <div className='flex flex-col mx-auto items-center justify-center px-3'>
-        <p className='font-bold'>
+      <div className='flex flex-col mx-auto items-center justify-center px-3 md:px-5'>
+        <p className='font-bold md:font-normal md:text-2xl md:mt-5'>
         Within the framework of our operations as a social enterprise, one of our core functions 
 is the provision of a web-based platform tailored to address the challenges associated 
 with managing and recording vehicle-related financial penalties, notably parking fines, 
@@ -34,6 +34,3 @@ charted
 }
 
 export default Operations;
-<div>
-    <h2>Operations</h2>
-</div>
